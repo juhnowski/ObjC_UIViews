@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.HiddenView.hidden = YES;
 }
 
 
@@ -26,4 +27,11 @@
 }
 
 
+- (IBAction)showView:(id)sender {
+    self.HiddenView.hidden = NO;
+}
+
+- (IBAction)hideView:(id)sender {
+    self.HiddenView.hidden = YES;
+}
 @end
